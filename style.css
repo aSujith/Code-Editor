@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #454545;
+    color: #fff;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    flex-basis: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    height: 40%;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    resize: none;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 0;
+    outline: 0;
+}
+
+label i {
+    margin-right: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    background: #000;
+    height: 30px;
+    padding: 0 10px;
+}
+
+/* Additional styles for better visual appearance */
+label i,
+label {
+    color: #fff;
+}
+
+/* Hover effect on labels */
+label:hover {
+    background: #333;
+    cursor: pointer;
+}
+
+/* Move the output field to the bottom */
+.right {
+    order: 1;
+}
